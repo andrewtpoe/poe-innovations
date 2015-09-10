@@ -9,7 +9,7 @@ gem 'pg'
 gem 'haml-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'puma'
-gem 'rails12factor', group: :production 
+gem 'rails_12factor', group: :production 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 
