@@ -1,0 +1,25 @@
+$m-max: 960px;
+$s-max: 720px;
+$es-max: 480px;
+
+
+$text: #2d2d2d;
+$subtext: #99999e;
+$background: #fff;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 200;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  color: $text;
+  background-color: $background;
+  margin: 0;
+}
