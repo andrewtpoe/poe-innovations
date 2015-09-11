@@ -20,12 +20,10 @@
   },
   "homepage": "https://github.com/poe-innovations-llc/poe-innovations#readme",
   "dependencies": {
-    "director": "^1.2.8",
     "browserify": "^11.0.1",
     "browserify-incremental": "^3.0.1",
     "reactify": "^1.1.1",
     "react": "^0.13.3",
-    "react-pick": "^0.5.0",
     "superagent": "^1.2.0"
   },
   "browserify": {

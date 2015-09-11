@@ -1,6 +1,5 @@
 // Libraries
 var React = require('react');
-var Router = require('director').Router;
 var Request = require('superagent');
 // Components
 var Beacon = require('./Beacon.react');
