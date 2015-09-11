@@ -1,5 +1,5 @@
 var React = require('react');
-// var Slides = require('./Slides');
+var Slides = require('Slides');
 
 var browser = function() {
   var div = document.querySelector('[data-js="slide-show"]');
