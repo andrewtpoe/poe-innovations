@@ -5,30 +5,30 @@ var React = require('react');
 // var NextSlide = require('./NextSlide.react');
 
 
-var Slides = React.createClass({
+var slides = React.createClass({
   // getInitialState: function () {
   //   return {
   //     slide: 0,
   //     slides: [0,1,2,3,4]
   //   }
   // },
-  //
+
   // tick: function() {
   //   this._nextSlide(this.state.slide);
   // },
-  //
+
   // componentDidMount: function() {
   //   this.interval = setInterval(this.tick, 10000);
   // },
-  //
+
   // componentWillUnmount: function() {
   //   clearInterval(this.interval);
   // },
-  //
+
   // _stopSlideShow: function() {
   //   clearInterval(this.interval);
   // },
-  //
+
   // _displaySlide: function() {
   //   return (
   //     <h1>
@@ -36,13 +36,13 @@ var Slides = React.createClass({
   //     </h1>
   //   )
   // },
-  //
+
   // _changeSlide: function(slideNumber) {
   //   this.setState ({
   //     slide: slideNumber
   //   })
   // },
-  //
+
   // _prevSlide: function(slide) {
   //   if (slide - 1 >= 0) {
   //     var slideNumber = slide - 1;
@@ -51,7 +51,7 @@ var Slides = React.createClass({
   //   };
   //   this._changeSlide(slideNumber);
   // },
-  //
+
   // _nextSlide: function(slide) {
   //   if (slide + 1 >= this.state.slides.length) {
   //     var slideNumber = 0;
@@ -60,7 +60,7 @@ var Slides = React.createClass({
   //   };
   //   this._changeSlide(slideNumber);
   // },
-  //
+
   // render: function() {
   //   var insert = this._displaySlide(this.state.slide);
   //   return (
@@ -80,4 +80,4 @@ var Slides = React.createClass({
 
 });
 
-module.exports = Slides;
+module.exports = slides;
