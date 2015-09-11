@@ -3,7 +3,7 @@ var React = require('react');
 var Beacon = React.createClass({
   render: function () {
     return (
-      <div className="foo"></div>;
+      <div className="testClass" />
     )
   }
 })
