@@ -6,7 +6,7 @@ var NextSlide = require('./NextSlide.react.js');
 var SlideShow = React.createClass({
   render: function() {
     return (
-      <test />
+      <Beacon />
     )
   }
 })
