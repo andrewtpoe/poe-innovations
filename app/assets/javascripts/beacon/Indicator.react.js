@@ -1,3 +1,16 @@
+var React = require('react');
+
+var test = React.createClass({
+  render: function () {
+    return (
+      <div className="testClass" />
+    )
+  }
+})
+
+module.exports = test;
+
+
 // var React = require('react');
 //
 // var Indicator = React.createClass({

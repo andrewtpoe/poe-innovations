@@ -1,26 +1,14 @@
 var React = require('react');
+var Indicator = require('./beacon/Indicator.react.js');
 
 var Beacon = React.createClass({
-  render: function () {
-    return (
-      <div className="testClass" />
-    )
-  }
-})
 
-module.exports = Beacon;
-
-// var React = require('react');
-// var Indicator = require('./beacon/Indicator.react.js');
-//
-// var Beacon = React.createClass({
-//
 //   _buildBeacons() {
 //     return this.props.slides.map(function(slideNumber) {
 //       return <Indicator slide={this.props.slide} indicatorNumber={slideNumber} key={slideNumber} changeSlide={this.props.changeSlide} stopSlideShow={this.props.stopSlideShow}/>
 //     }.bind(this))
 //   },
-//
+
 //   render: function() {
 //     return (
 //       <div className="slideshow__beacon">
@@ -29,5 +17,11 @@ module.exports = Beacon;
 //     )
 //   }
 // });
-//
-// module.exports = Beacon;
+
+  render: function () {
+    return (
+      <Indicator />
+    )
+  }
+
+module.exports = Beacon;
