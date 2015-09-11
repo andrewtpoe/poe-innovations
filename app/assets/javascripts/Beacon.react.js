@@ -13,7 +13,6 @@ var Beacon = React.createClass({
   },
 
   render: function() {
-    console.log('Rendering Beacon');
     return (
       <div className="slideshow__beacon">
         {this._buildBeacons()}
