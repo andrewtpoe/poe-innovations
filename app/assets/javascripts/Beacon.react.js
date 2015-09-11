@@ -1,8 +1,8 @@
 var React = require('react');
 
-var Beacon = <div className="testClass" />
+var test = <div className="testClass" />;
 
-module.exports = Beacon;
+module.exports = test;
 
 // var React = require('react');
 // var Indicator = require('./beacon/Indicator.react.js');
