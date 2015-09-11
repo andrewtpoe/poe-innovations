@@ -19,3 +19,9 @@
 // });
 //
 // module.exports = Beacon;
+
+var React = require('react');
+
+var test = <div className="testClass" />
+
+module.exports = test;
