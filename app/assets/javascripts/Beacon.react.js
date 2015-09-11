@@ -1,3 +1,9 @@
+var React = require('react');
+
+var test = <div className="testClass" />
+
+module.exports = test;
+
 // var React = require('react');
 // var Indicator = require('./beacon/Indicator.react.js');
 //
@@ -19,9 +25,3 @@
 // });
 //
 // module.exports = Beacon;
-
-var React = require('react');
-
-var test = <div className="testClass" />
-
-module.exports = test;
