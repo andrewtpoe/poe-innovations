@@ -1,1 +1,1 @@
-require('./browser.js')();
+require('./components.js')();

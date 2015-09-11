@@ -1,7 +1,7 @@
 var React = require('react');
-var Slides = require('Slides');
+var Slides = require('./Slides.react.js');
 
-var browser = function() {
+var components = function() {
   var div = document.querySelector('[data-js="slide-show"]');
   if (div) {
     // React.render(<Slides />, div);
@@ -9,4 +9,4 @@ var browser = function() {
   }
 };
 
-module.exports = browser;
+module.exports = components;
