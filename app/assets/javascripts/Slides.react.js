@@ -1,7 +1,5 @@
-// Libraries
 var React = require('react');
 // var Request = require('superagent');
-// Components
 // var Beacon = require('./Beacon.react');
 // var PrevSlide = require('./PrevSlide.react');
 // var NextSlide = require('./NextSlide.react');
