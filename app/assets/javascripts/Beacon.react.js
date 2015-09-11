@@ -1,8 +1,14 @@
 var React = require('react');
 
-var test = <div className="testClass" />;
+var Beacon = React.createClass({
+  render: function () {
+    return (
+      <div className="testClass" />;
+    )
+  }
+})
 
-module.exports = test;
+module.exports = Beacon;
 
 // var React = require('react');
 // var Indicator = require('./beacon/Indicator.react.js');
