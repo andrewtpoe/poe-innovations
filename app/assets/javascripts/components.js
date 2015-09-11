@@ -1,5 +1,5 @@
 var React = require('react');
-var SlideShow = require('./SlideShow.react.js')
+var SlideShow = require('./slideshow/Main.react.js')
 
 var components = function() {
   var div = document.querySelector('[data-js="slide-show"]');
