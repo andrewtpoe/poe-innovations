@@ -1,1 +1,1 @@
-// require('./browser.js')();
+require('./browser.js')();
