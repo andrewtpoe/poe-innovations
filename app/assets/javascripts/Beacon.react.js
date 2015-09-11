@@ -1,8 +1,5 @@
-// Libraries
 var React = require('react');
-var Request = require('superagent');
-// Components
-var Indicator = require('./beacon/Indicator.react');
+var Indicator = require('./beacon/Indicator.react.js');
 
 var Beacon = React.createClass({
 
