@@ -1,5 +1,11 @@
 var React = require('react');
 
-var test = <div className="foo" />
+var test = React.createClass({
+  render: function() {
+    return (
+      <div className="foo" />
+    )
+  }
+})
 
 module.exports = test;

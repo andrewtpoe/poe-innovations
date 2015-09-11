@@ -77,6 +77,7 @@ var slides = React.createClass({
     return (
       <div className="foo" />
     )
+  }
 
 });
 
