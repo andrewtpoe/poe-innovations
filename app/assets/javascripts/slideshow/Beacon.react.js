@@ -3,12 +3,6 @@ var Indicator = require('./beacon/Indicator.react.js');
 
 var Beacon = React.createClass({
 
-  // _buildBeacons() {
-  //   return this.props.slides.map(function(slideNumber) {
-  //     return <Indicator slide={this.props.slide} indicatorNumber={slideNumber} key={slideNumber} changeSlide={this.props.changeSlide} stopSlideShow={this.props.stopSlideShow}/>
-  //   }.bind(this))
-  // },
-
   _buildIndicators: function() {
     return this.props.slides.map(function(slideNumber) {
       return <Indicator slide={this.props.slide} indicatorNumber={slideNumber} key={slideNumber} changeSlide={this.props.changeSlide} stopSlideShow={this.props.stopSlideShow}/>
