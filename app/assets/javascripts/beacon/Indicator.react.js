@@ -1,6 +1,6 @@
 var React = require('react');
 
-var test = React.createClass({
+var Indicator = React.createClass({
   render: function () {
     return (
       <div className="testClass" />
@@ -8,7 +8,7 @@ var test = React.createClass({
   }
 })
 
-module.exports = test;
+module.exports = Indicator;
 
 
 // var React = require('react');

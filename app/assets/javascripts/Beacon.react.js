@@ -23,6 +23,7 @@ var Beacon = React.createClass({
       <Indicator />
     )
   }
+
 });
 
 module.exports = Beacon;
