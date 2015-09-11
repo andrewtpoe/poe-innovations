@@ -18,12 +18,4 @@ var Beacon = React.createClass({
   }
 });
 
-  // render: function () {
-  //   return (
-  //     <Indicator />
-  //   )
-  // }
-
-});
-
 module.exports = Beacon;
