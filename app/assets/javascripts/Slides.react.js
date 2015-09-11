@@ -7,14 +7,14 @@ var React = require('react');
 // var NextSlide = require('./NextSlide.react');
 
 
-var SlideShow = React.createClass({
+var Slides = React.createClass({
   // getInitialState: function () {
   //   return {
   //     slide: 0,
   //     slides: [0,1,2,3,4]
   //   }
   // },
-  // 
+  //
   // tick: function() {
   //   this._nextSlide(this.state.slide);
   // },
@@ -82,4 +82,4 @@ var SlideShow = React.createClass({
 
 });
 
-module.exports = SlideShow;
+module.exports = Slides;
