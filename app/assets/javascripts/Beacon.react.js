@@ -1,5 +1,5 @@
 var React = require('react');
-var Indicator = require('./beacon/Indicator.react.js');
+// var Indicator = require('./beacon/Indicator.react.js');
 
 var Beacon = React.createClass({
 
