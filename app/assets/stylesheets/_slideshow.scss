@@ -1,15 +1,21 @@
 .slideshow {
-  position: fixed;
-  top: 10%;
+  position: absolute;
+  top: 80px;
+  bottom: 0;
   width: 100%;
-  height: 90vh;
   background-image: image_url('morris-island-332809.jpg');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 100% 0%;
+  background-position: 55% 0%;
+  @media all and (max-width: $s-max) {
+    top: 60px;
+  }
+  @media all and (max-width: $es-max) {
+    top: 100px;
+  }
   > h1 {
     display: block;
     margin: 0;
@@ -31,13 +37,9 @@
 }
 .slideshow__beacon {
   position: relative;
-  // top: 0;
-  // left: 50%;
-  // transform: translate(-50%, 0);
-  // -webkit-transform: translate(-50%, 0);
+  margin: 0 auto 50px;
   height: 30px;
   width: 30%;
-  margin: 0 auto 50px;
   @include flexbox;
   border-radius: 0 0 10px 10px;
   box-shadow: 2px 2px 2px $text;
@@ -46,6 +48,12 @@
   transition: opacity 0.3s;
   &:hover {
     opacity: 0.8;
+  }
+  @media all and (max-width: $s-max) {
+    width: 50%;
+  }
+  @media all and (max-width: $es-max) {
+    width: 70%;
   }
 }
 .slideshow__beaconIndicator {
@@ -77,6 +85,9 @@
   &:hover {
     opacity: 0.6;
   }
+  @media all and (max-width: $es-max) {
+    display: none;
+  }
 }
 .slideshow__nextSlide {
   position: fixed;
@@ -99,58 +110,72 @@
   &:hover {
     opacity: 0.6;
   }
+  @media all and (max-width: $es-max) {
+    display: none;
+  }
 }
 .slide {
-  position: relative;
-  // top: 10%;
-  // left: 50%;
-  background-color: rgba(255,255,255,0.9);
-  // -webkit-transform: translate(-50%, 0);
-  // transform: translate(-50%, 0);
-  width: 60%;
-  // height: 80%;
-  padding: 5%;
-  margin: 0 auto 10%;
-  font-size: 1.8em;
-  line-height: 2em;
-  // overflow: scroll;
-}
-.slide__intro {
-  font-family: 'Satisfy', cursive;
   position: absolute;
   top: 150px;
-  right: 20%;
-  max-width: 60%;
-  text-align: right;
+  left: 10%;
+  text-align: center;
+  width: 80%;
+  padding-bottom: 50px;
+  font-size: 1em;
   font-weight: 900;
   color: $background;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  @media all and (max-width: $s-max) {
+    top: 100px;
+  }
+  @media all and (max-width: $es-max) {
+    top: 50px;
+  }
   > h1 {
+    margin: 15px 0;
+    font-family: 'Satisfy', cursive;
     font-size: 5em;
+    @media all and (max-width: $s-max) {
+      font-size: 3em;
+    }
+    @media all and (max-width: $s-max) {
+      font-size: 2em;
+    }
   }
   > h2 {
+    margin: 15px 0;
+    font-size: 2.7em;
+    @media all and (max-width: $s-max) {
+      font-size: 1.6em;
+    }
+    @media all and (max-width: $es-max) {
+      font-size: 1em;
+    }
+  }
+  > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     font-size: 3em;
+    @media all and (max-width: $s-max) {
+      font-size: 2em;
+    }
+    > li {
+      margin: 10px 0;
+    }
+  }
+  a {
+    display: block;
+    color: $background;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
-.slide__content {
-  // overflow: scroll;
-}
-.slide__title {
-  text-align: right;
-  margin: 0 0 20px 0;
-}
 .slide__bioPic {
-  display: inline-block;
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
   border-radius: 10px;
-  box-shadow: 1px 1px 2px rgba(0,0,0,.3);
-}
-.slide__bioTitle {
-  display: inline-block;
-  height: 150px;
-  margin: 0 0 0 20px;
-  vertical-align: top;
-  font-size: 2em;
-  line-height: 150px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }

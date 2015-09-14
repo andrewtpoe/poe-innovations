@@ -1,6 +1,21 @@
 .home
   .home__top
-    .home__topTitle POE Innovations
-    .home__topRight in Pursuit Of Excellence through Innovation
+    .home__topTitle
+      %a{ href: "/" }
+        POE Innovations
+    .home__topRight
+      %a{ href: "https://github.com/poe-innovations-llc" }
+        %i{ class: "hvr-bob fa fa-github-square"}
+      %a{ href: "https://twitter.com/intent/tweet?screen_name=poeinnovations"}
+        %i{ class: "hvr-bob fa fa-twitter-square" }
+      %a{ href: "https://instagram.com/poeinnovations" }
+        %i{ class: "hvr-bob fa fa-instagram" }
+      %a{ href: "tel:843-732-0014" }
+        %i{ class: "hvr-bob fa fa-phone-square" }
+      %a{ href: "mailto:poeinnovations@gmail.com?subject=I would like to talk tech with you!" }
+        %i{ class: "hvr-bob fa fa-envelope" }
 
-  .home__slideshow{ data: { js: 'slide-show' } }
+  %div{ data: { js: 'slide-show' } }
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
