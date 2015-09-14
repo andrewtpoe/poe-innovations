@@ -1,81 +1,81 @@
 .home {
 }
 .home__top {
-  height: 10vh;
+  position: relative;
+  height: 80px;
   width: 100%;
-  background-color: #D2DBEA;
+  background-color: #727B8F;
   @media all and (max-width: $s-max) {
-    height: 14vh;
+    height: 60px;
   }
   @media all and (max-width: $es-max) {
-    height: 12vh;
+    height: 100px;
   }
 }
 .home__topTitle {
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
   margin: 0 0 0 2%;
-  width: 37%;
-  color: $text;
-  font-size: 5em;
+  height: 80px;
+  line-height: 78px;
   font-family: Impact, Charcoal, sans-serif;
-  line-height: 10vh;
-  @media all and (max-width: $m-max) {
-    width: 50%;
-    line-height: 8vh;
-  }
+  font-size: 5em;
   @media all and (max-width: $s-max) {
-    display: block;
-    width: 100%;
+    height: 60px;
+    line-height: 58px;
+    font-size: 3em;
   }
   @media all and (max-width: $es-max) {
-    display: block;
-    margin: 0;
-    width: 100%;
+    position: relative;
     text-align: center;
     font-size: 4em;
+    height: 55px;
+    margin: 0;
+  }
+  > a {
+    color: $background;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-decoration: none;
   }
 }
 .home__topRight {
-  position: relative;
-  display: inline-block;
-  width: 59%;
-  margin: 0 1% 0 0;
-  vertical-align: top;
-  text-align: right;
-  font-size: 2em;
-  line-height: 10vh;
-  font-weight: 400;
-  color: $text;
-  @media all and (max-width: $m-max) {
-    font-size: 1.5em;
-    width: 46%;
-  }
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80px;
+  margin: 0 2% 0 0;
+  line-height: 78px;
   @media all and (max-width: $s-max) {
-    display: block;
-    margin: 0 0 0 2%;
-    width: 100%;
-    text-align: left;
-    font-size: 2em;
-    line-height: 6vh;
+    height: 60px;
+    line-height: 58px;
   }
   @media all and (max-width: $es-max) {
-    margin: 0;
+    position: relative;
     text-align: center;
-    font-size: 1.5em;
-    line-height: 4vh;
+    height: 40px;
+    line-height: 38px;
+    @include flexbox;
+    margin: 0;
+
+  }
+  > a {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 4em;
+    color: $background;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    @media all and (max-width: $s-max) {
+      font-size: 3em;
+      padding: 0 5px;
+    }
+    @media all and (max-width: $es-max) {
+      @include flex(1);
+      font-size: 3em;
+    }
   }
 }
 .home__slideshow {
-  height: 90vh;
-  width: 100%;
-  @media all and (max-width: $m-max) {
-    height: 84vh;
-  }
-  @media all and (max-width: $s-max) {
-    height: 86vh;
-  }
-  @media all and (max-width: $es-max) {
-    height: 88vh;
-  }
+  // height: 100%;
+  // width: 100%;
 }
