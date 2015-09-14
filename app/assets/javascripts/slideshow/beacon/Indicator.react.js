@@ -4,7 +4,6 @@ var React = require('react');
 
 var Indicator = React.createClass({
   _handleChange: function() {
-    event.preventDefault();
     this.props.stopSlideShow();
     this.props.changeSlide(this.props.indicatorNumber);
   },

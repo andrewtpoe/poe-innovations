@@ -2,12 +2,13 @@ var React = require('react');
 var Beacon = require('./Beacon.react.js');
 var PrevSlide = require('./PrevSlide.react.js');
 var NextSlide = require('./NextSlide.react.js');
+var Slide = require('./Slide.react.js');
 
 var SlideShow = React.createClass({
   getInitialState: function () {
     return {
       slide: 0,
-      slides: [0,1,2,3,4]
+      slides: 4
     }
   },
 
@@ -25,13 +26,16 @@ var SlideShow = React.createClass({
 
   _stopSlideShow: function() {
     clearInterval(this.interval);
+    this.interval = false;
   },
 
   _displaySlide: function() {
+    var fade = '';
+    if (this.interval) {
+      fade = ' fade'
+    };
     return (
-      <h1>
-        {this.state.slides[this.state.slide]}
-      </h1>
+      <Slide slide={this.state.slide} fade={fade} />
     )
   },
 
@@ -45,13 +49,13 @@ var SlideShow = React.createClass({
     if (slide - 1 >= 0) {
       var slideNumber = slide - 1;
     } else {
-      var slideNumber = this.state.slides.length - 1;
+      var slideNumber = this.state.slides - 1;
     };
     this._changeSlide(slideNumber);
   },
 
   _nextSlide: function(slide) {
-    if (slide + 1 >= this.state.slides.length) {
+    if (slide + 1 >= this.state.slides) {
       var slideNumber = 0;
     } else {
       var slideNumber = slide + 1;
@@ -63,10 +67,12 @@ var SlideShow = React.createClass({
     var insert = this._displaySlide(this.state.slide);
     return (
       <div className="slideshow">
-        <Beacon slide={this.state.slide} slides={this.state.slides} changeSlide={this._changeSlide} stopSlideShow={this._stopSlideShow} />
-        <PrevSlide slide={this.state.slide} slides={this.state.slides} prevSlide={this._prevSlide} stopSlideShow={this._stopSlideShow} />
-        { insert }
-        <NextSlide slide={this.state.slide} slides={this.state.slides} nextSlide={this._nextSlide} stopSlideShow={this._stopSlideShow} />
+        <div className="slideshow__tint" >
+          <Beacon slide={this.state.slide} slides={this.state.slides} changeSlide={this._changeSlide} stopSlideShow={this._stopSlideShow} />
+          <PrevSlide slide={this.state.slide} prevSlide={this._prevSlide} stopSlideShow={this._stopSlideShow} />
+          { insert }
+          <NextSlide slide={this.state.slide} nextSlide={this._nextSlide} stopSlideShow={this._stopSlideShow} />
+        </div>
       </div>
     )
   }
