@@ -3,7 +3,6 @@ var React = require('react');
 
 var PrevSlide = React.createClass({
   _handleChange: function() {
-    event.preventDefault();
     this.props.stopSlideShow();
     this.props.prevSlide(this.props.slide);
   },

@@ -1,16 +1,9 @@
 .home {
-  width: 100%;
-  height: 100vh;
-  background-image: image_url('top_background.png');
-  background-size: 100%;
 }
 .home__top {
   height: 10vh;
   width: 100%;
-  background-color: $text;
-  @media all and (max-width: $m-max) {
-    height: 16vh;
-  }
+  background-color: #D2DBEA;
   @media all and (max-width: $s-max) {
     height: 14vh;
   }
@@ -19,42 +12,50 @@
   }
 }
 .home__topTitle {
+  position: relative;
   display: inline-block;
   margin: 0 0 0 2%;
   width: 37%;
-  color: $subtext;
+  color: $text;
   font-size: 5em;
   font-family: Impact, Charcoal, sans-serif;
   line-height: 10vh;
   @media all and (max-width: $m-max) {
-    display: block;
-    width: 100%;
+    width: 50%;
     line-height: 8vh;
   }
+  @media all and (max-width: $s-max) {
+    display: block;
+    width: 100%;
+  }
   @media all and (max-width: $es-max) {
+    display: block;
     margin: 0;
+    width: 100%;
     text-align: center;
     font-size: 4em;
   }
 }
 .home__topRight {
+  position: relative;
   display: inline-block;
   width: 59%;
   margin: 0 1% 0 0;
   vertical-align: top;
   text-align: right;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 10vh;
-  font-weight: 100;
-  color: $background;
+  font-weight: 400;
+  color: $text;
   @media all and (max-width: $m-max) {
+    font-size: 1.5em;
+    width: 46%;
+  }
+  @media all and (max-width: $s-max) {
     display: block;
     margin: 0 0 0 2%;
     width: 100%;
-    line-height: 8vh;
     text-align: left;
-  }
-  @media all and (max-width: $s-max) {
     font-size: 2em;
     line-height: 6vh;
   }
