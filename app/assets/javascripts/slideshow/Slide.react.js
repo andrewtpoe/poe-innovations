@@ -25,6 +25,22 @@ var slide = React.createClass({
       <div className={this.props.fade} >
         <div className="slide" >
           <h1 >
+            Our Applications:
+          </h1>
+          <a href="https://flatratetracker.com" className="slide__bioLink">
+            <img src='https://raw.githubusercontent.com/andrewtpoe/andrewtpoe.github.io/master/images/FRT.png' className="slide__pic" ></img>
+            <h2>Flat Rate Tracker</h2>
+          </a>
+        </div>
+      </div>
+    );
+  },
+
+  _slide2: function() {
+    return (
+      <div className={this.props.fade} >
+        <div className="slide" >
+          <h1 >
             Our Services:
           </h1>
           <ul>
@@ -40,7 +56,7 @@ var slide = React.createClass({
     );
   },
 
-  _slide2: function() {
+  _slide3: function() {
     return (
       <div className={this.props.fade} >
         <div className="slide" >
@@ -59,15 +75,17 @@ var slide = React.createClass({
     );
   },
 
-  _slide3: function() {
+  _slide4: function() {
     return (
       <div className={this.props.fade} >
         <div className="slide" >
           <h1>
             Meet the CEO
           </h1>
-          <img src='https://avatars2.githubusercontent.com/u/11183459?v=3&s=500' className="slide__bioPic" ></img>
-          <h2>Andrew T. Poe</h2>
+          <a href="https://andrewtpoe.github.io" className="slide__bioLink">
+            <img src='https://avatars2.githubusercontent.com/u/11183459?v=3&s=500' className="slide__pic slide__picShadow" ></img>
+            <h2>Andrew T. Poe</h2>
+          </a>
         </div>
       </div>
     );
@@ -88,6 +106,8 @@ var slide = React.createClass({
         break;
       case 3:
         slide = self._slide3();
+      case 4:
+        slide = self._slide4();
         break;
     };
     return (

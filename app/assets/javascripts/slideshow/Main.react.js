@@ -8,7 +8,7 @@ var SlideShow = React.createClass({
   getInitialState: function () {
     return {
       slide: 0,
-      slides: 4
+      slides: 5
     }
   },
 

@@ -173,9 +173,16 @@
     }
   }
 }
-.slide__bioPic {
+.slide__bioLink {
+  > h2 {
+    font-size: 2.5em;
+  }
+}
+.slide__pic {
   height: 250px;
   width: 250px;
+}
+.slide__picShadow {
   border-radius: 10px;
   box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
