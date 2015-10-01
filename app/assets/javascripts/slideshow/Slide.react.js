@@ -66,8 +66,10 @@ var slide = React.createClass({
           <h1>
             Meet the CEO
           </h1>
-          <img src='https://avatars2.githubusercontent.com/u/11183459?v=3&s=500' className="slide__bioPic" ></img>
-          <h2>Andrew T. Poe</h2>
+          <a href="https://andrewtpoe.github.io" className="slide__bioLink">
+            <img src='https://avatars2.githubusercontent.com/u/11183459?v=3&s=500' className="slide__bioPic" ></img>
+            <h2>Andrew T. Poe</h2>
+          </a>
         </div>
       </div>
     );
